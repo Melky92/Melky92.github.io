@@ -1,20 +1,29 @@
 
 var pkmn =
 [
-  {"Name" : "Magikarp","Level" : 1,"Icon" : "_"},
-  {"Name" : "Magmar","Level" : 2,"Icon" : "a"},
-  {"Name" : "Machamp","Level" : 3,"Icon" : "b"},
-  {"Name" : "Jolteon","Level" : 3,"Icon" : "c"},
-  {"Name" : "Vaporeon","Level" : 3,"Icon" : "d"},
-  {"Name" : "Lapras","Level" : 4,"Icon" : "!"},
-  {"Name" : "Snorlax","Level" : 4,"Icon" : "%"},
-  {"Name" : "Charizard","Level" : 4,"Icon" : "&"},
-  {"Name" : "Entei","Level" : 5,"Icon" : "🦁"},
-  {"Name" : "Raikou","Level" : 5,"Icon" : "º"},
-  {"Name" : "Suicune","Level" : 5,"Icon" : "-"},
-  {"Name" : "Articuno","Level" : 5,"Icon" : "*"},
-  {"Name" : "Zapdos","Level" : 5,"Icon" : "="},
-  {"Name" : "Moltres","Level" : 5,"Icon" : ","}
+  {"Name" : "LEVEL 1","Level" : 1,"Icon" : "❓"},
+  {"Name" : "LEVEL 2","Level" : 2,"Icon" : "❓"},
+  {"Name" : "LEVEL 3","Level" : 3,"Icon" : "❓"},
+  {"Name" : "LEVEL 4","Level" : 4,"Icon" : "❓"},
+  {"Name" : "LEVEL 5","Level" : 5,"Icon" : "❓"},
+  {"Name" : "MAGIKARP","Level" : 1,"Icon" : "_"},
+  {"Name" : "MAGMAR","Level" : 2,"Icon" : "a"},
+  {"Name" : "MACHAMP","Level" : 3,"Icon" : "🏋"},
+  {"Name" : "BLASTOISE","Level" : 3,"Icon" : "💦"},
+  {"Name" : "JOLTEON","Level" : 3,"Icon" : "c"},
+  {"Name" : "VAPOREON","Level" : 3,"Icon" : "d"},
+  {"Name" : "CHARIZARD","Level" : 4,"Icon" : "&"},
+  {"Name" : "RHYDON","Level" : 4,"Icon" : "🦏"},
+  {"Name" : "GENGAR","Level" : 4,"Icon" : "👻"},
+  {"Name" : "LAPRAS","Level" : 4,"Icon" : "🐳"},
+  {"Name" : "SNORLAX","Level" : 4,"Icon" : "🐻"},
+  {"Name" : "TYRANITAR","Level" : 4,"Icon" : "🦎"},
+  {"Name" : "ENTERI","Level" : 5,"Icon" : "🦁"},
+  {"Name" : "RAIKOU","Level" : 5,"Icon" : "º"},
+  {"Name" : "SUICUNE","Level" : 5,"Icon" : "-"},
+  {"Name" : "ARTICUNO","Level" : 5,"Icon" : "*"},
+  {"Name" : "ZAPDOS","Level" : 5,"Icon" : "="},
+  {"Name" : "MOLTRES","Level" : 5,"Icon" : ","}
 ];
 
 var gyms =

@@ -47,7 +47,7 @@ function CheckAndRun(){
   resultado += "10)\n";
   resultado += "\n";
   resultado += "*Lista Oficial*\n";
-  resultado += "Suerte Gente!🇴🇴\n";
+  resultado += "Suerte Gente!🇧🇴\n";
 
   $("#texto_resultado").text(resultado);
 }
