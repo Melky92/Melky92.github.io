@@ -32,19 +32,12 @@ function CheckAndRun(){
   resultado += DIR + "\n";
   resultado += "Hora: " + TIME_RAID + "\n";
   resultado += "Se va: " + TIME_END + "\n";
+  resultado += "Quorum necesario: " + PKMN.rec_low + " a " + PKMN.rec_high + " personas\n";
   resultado += "\n";
   resultado += "\n";
   resultado += "Lista de confirmados:\n";
-  resultado += "1)\n";
-  resultado += "2)\n";
-  resultado += "3)\n";
-  resultado += "4)\n";
-  resultado += "5)\n";
-  resultado += "6)\n";
-  resultado += "7)\n";
-  resultado += "8)\n";
-  resultado += "9)\n";
-  resultado += "10)\n";
+  for(i = 1; i <= PKMN.rec_high;i++)
+    resultado += i + ")\n";
   resultado += "\n";
   resultado += "*Lista Oficial*\n";
   resultado += "Suerte Gente!🇧🇴\n";

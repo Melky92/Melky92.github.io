@@ -1,29 +1,45 @@
 
 var pkmn =
 [
-  {"Name" : "LEVEL 1","Level" : 1,"Icon" : "❓"},
-  {"Name" : "LEVEL 2","Level" : 2,"Icon" : "❓"},
-  {"Name" : "LEVEL 3","Level" : 3,"Icon" : "❓"},
-  {"Name" : "LEVEL 4","Level" : 4,"Icon" : "❓"},
-  {"Name" : "LEVEL 5","Level" : 5,"Icon" : "❓"},
-  {"Name" : "MAGIKARP","Level" : 1,"Icon" : "_"},
-  {"Name" : "MAGMAR","Level" : 2,"Icon" : "a"},
-  {"Name" : "MACHAMP","Level" : 3,"Icon" : "🏋"},
-  {"Name" : "BLASTOISE","Level" : 3,"Icon" : "💦"},
-  {"Name" : "JOLTEON","Level" : 3,"Icon" : "c"},
-  {"Name" : "VAPOREON","Level" : 3,"Icon" : "d"},
-  {"Name" : "CHARIZARD","Level" : 4,"Icon" : "&"},
-  {"Name" : "RHYDON","Level" : 4,"Icon" : "🦏"},
-  {"Name" : "GENGAR","Level" : 4,"Icon" : "👻"},
-  {"Name" : "LAPRAS","Level" : 4,"Icon" : "🐳"},
-  {"Name" : "SNORLAX","Level" : 4,"Icon" : "🐻"},
-  {"Name" : "TYRANITAR","Level" : 4,"Icon" : "🦎"},
-  {"Name" : "ENTEI","Level" : 5,"Icon" : "🦁"},
-  {"Name" : "RAIKOU","Level" : 5,"Icon" : "º"},
-  {"Name" : "SUICUNE","Level" : 5,"Icon" : "-"},
-  {"Name" : "ARTICUNO","Level" : 5,"Icon" : "*"},
-  {"Name" : "ZAPDOS","Level" : 5,"Icon" : "="},
-  {"Name" : "MOLTRES","Level" : 5,"Icon" : ","}
+  {"Name" : "LEVEL 1","Level" : 1,"Icon" : "❓","Rec_Low" : "1", "Rec_High" : "2"},
+  {"Name" : "LEVEL 2","Level" : 2,"Icon" : "❓","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "LEVEL 3","Level" : 3,"Icon" : "❓","Rec_Low" : "4", "Rec_High" : "6"},
+  {"Name" : "LEVEL 4","Level" : 4,"Icon" : "❓","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "LEVEL 5","Level" : 5,"Icon" : "❓","Rec_Low" : "8", "Rec_High" : "10"},
+
+  {"Name" : "MAGIKARP","Level" : 1,"Icon" : "_","Rec_Low" : "1", "Rec_High" : "2"},
+  {"Name" : "CROCONAW","Level" : 1,"Icon" : "_","Rec_Low" : "1", "Rec_High" : "2"},
+  {"Name" : "QUILAVA","Level" : 1,"Icon" : "_","Rec_Low" : "1", "Rec_High" : "2"},
+  {"Name" : "BAYLEAF","Level" : 1,"Icon" : "_","Rec_Low" : "1", "Rec_High" : "2"},
+
+  {"Name" : "EXEGGUTOR","Level" : 2,"Icon" : "_","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "MUK","Level" : 2,"Icon" : "_","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "MAGMAR","Level" : 2,"Icon" : "_","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "ELECTABUZZ","Level" : 2,"Icon" : "_","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "WEEZING","Level" : 2,"Icon" : "_","Rec_Low" : "2", "Rec_High" : "4"},
+
+  {"Name" : "MACHAMP","Level" : 3,"Icon" : "🏋","Rec_Low" : "2", "Rec_High" : "4"},
+  {"Name" : "GENGAR","Level" : 3,"Icon" : "👻","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "ALAKAZAM","Level" : 3,"Icon" : "_","Rec_Low" : "4", "Rec_High" : "6"},
+  {"Name" : "ARCANINE","Level" : 3,"Icon" : "_","Rec_Low" : "4", "Rec_High" : "6"},
+  {"Name" : "JOLTEON","Level" : 3,"Icon" : "_","Rec_Low" : "4", "Rec_High" : "6"},
+  {"Name" : "VAPOREON","Level" : 3,"Icon" : "_","Rec_Low" : "4", "Rec_High" : "6"},
+  {"Name" : "FLAREON","Level" : 3,"Icon" : "_","Rec_Low" : "4", "Rec_High" : "6"},
+
+  {"Name" : "BLASTOISE","Level" : 4,"Icon" : "💦","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "VENUSAUR","Level" : 4,"Icon" : "_","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "CHARIZARD","Level" : 4,"Icon" : "_","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "RHYDON","Level" : 4,"Icon" : "🦏","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "LAPRAS","Level" : 4,"Icon" : "🐳","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "SNORLAX","Level" : 4,"Icon" : "🐻","Rec_Low" : "6", "Rec_High" : "8"},
+  {"Name" : "TYRANITAR","Level" : 4,"Icon" : "🦎","Rec_Low" : "6", "Rec_High" : "8"},
+
+  {"Name" : "ENTEI","Level" : 5,"Icon" : "🦁","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "RAIKOU","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "SUICUNE","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "ARTICUNO","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "ZAPDOS","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "MOLTRES","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
 ];
 
 var gyms =
@@ -54,14 +70,19 @@ function LvlChanged()
 {
   lvl = $("#input_pkmn_lvl")[0].selectedOptions[0].value;
   j = 0;
+  $("#input_pkmn").empty();
   for(i = 0;i<pkmn.length;i++)
   {
     if(pkmn[i].Level == lvl)
     {
+      $("#input_pkmn").append( '<option></option>' );
+
       $("#input_pkmn")[0][j].text = pkmn[i].Name;
       $("#input_pkmn")[0][j].name = pkmn[i].Name;
       $("#input_pkmn")[0][j].level = pkmn[i].Level;
       $("#input_pkmn")[0][j].icon = pkmn[i].Icon;
+      $("#input_pkmn")[0][j].rec_low = pkmn[i].Rec_Low;
+      $("#input_pkmn")[0][j].rec_high = pkmn[i].Rec_High;
       j++;
     }
   }
