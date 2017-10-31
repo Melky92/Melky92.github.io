@@ -18,7 +18,7 @@ var pkmn =
   {"Name" : "LAPRAS","Level" : 4,"Icon" : "🐳"},
   {"Name" : "SNORLAX","Level" : 4,"Icon" : "🐻"},
   {"Name" : "TYRANITAR","Level" : 4,"Icon" : "🦎"},
-  {"Name" : "ENTERI","Level" : 5,"Icon" : "🦁"},
+  {"Name" : "ENTEI","Level" : 5,"Icon" : "🦁"},
   {"Name" : "RAIKOU","Level" : 5,"Icon" : "º"},
   {"Name" : "SUICUNE","Level" : 5,"Icon" : "-"},
   {"Name" : "ARTICUNO","Level" : 5,"Icon" : "*"},
