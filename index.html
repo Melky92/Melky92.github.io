@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Raid helper</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+<body>
+  <div class="data">
+    <div id="div_datos_imagen">
+      <h3 class= "input text"> Hora en imagen:
+        <input id="input_hora_imagen" type="time" onchange="CheckAndRun()" value="11:00"/>
+      </h3>
+    </div>
+    <div id="div_tiempo_restante">
+      <h3 class="input text"> Tiempo Restante:
+        <input id="input_tiempo_restante" type="time" onchange="CheckAndRun()" value="01:00"/>
+      </h3>
+    </div>
+    <div id="div_pkmn">
+      <h3 class="input text"> Pokemon:
+          <select id="input_pkmn_lvl" onchange="LvlChanged()">
+              <option value="5">nivel 5</option>
+              <option value="4">nivel 4</option>
+              <option value="3">nivel 3</option>
+              <option value="2">nivel 2</option>
+              <option value="1">nivel 1</option>
+          </select>
+          <select id="input_pkmn" onchange="CheckAndRun()">
+              <option>a</option>
+              <option>b</option>
+              <option>c</option>
+              <option>d</option>
+              <option>e</option>
+              <option>f</option>
+              <option>g</option>
+              <option>h</option>
+          </select>
+      </h3>
+    </div>
+    <div id="div_gym">
+      <h3 class="input text"> Gimnasio:
+        <select id="input_gym_name" onchange="GymSelected()">
+            <option>a</option>
+            <option>b</option>
+            <option>c</option>
+        </select>
+        <br>Dirección:
+        <input id="input_gym_dir" type="text" onchange="CheckAndRun()"/>
+      </h3>
+    </div>
+  </div>
+  <!--<button onclick="CheckAndRun()">Generar</button>-->
+
+  <div>
+    <!--<h3 class="display text"> Resultado: </h3>-->
+    <button id="copiar_resultado" data-clipboard-target="#texto_resultado">Copiar</button>
+    <br>
+    <textarea id="texto_resultado"></textarea>
+  </div>
+
+
+</body>
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>-->
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="clipboard.js-master/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="calcs.js"></script>
+<script type="text/javascript" src="data.js"></script>
+</html>
