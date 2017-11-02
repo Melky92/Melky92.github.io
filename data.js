@@ -35,8 +35,8 @@ var pkmn =
   {"Name" : "TYRANITAR","Level" : 4,"Icon" : "🦎","Rec_Low" : "6", "Rec_High" : "8"},
 
   {"Name" : "ENTEI","Level" : 5,"Icon" : "🦁","Rec_Low" : "8", "Rec_High" : "10"},
-  {"Name" : "RAIKOU","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
-  {"Name" : "SUICUNE","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "RAIKOU","Level" : 5,"Icon" : "🐯","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "SUICUNE","Level" : 5,"Icon" : "🦄","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "ARTICUNO","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "ZAPDOS","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "MOLTRES","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
@@ -56,7 +56,7 @@ var pkmn =
 
 $(document).ready(function () {
   //console.log($("#input_gym_name")[0]);
-  $.getJSON("./data.txt", function(data) {
+  $.getJSON("https://melky92.github.io/data.txt", function(data) {
     //console.log( "data" );
     gyms = data.gimnasios;
     var $input_gym_name = $("#input_gym_name");

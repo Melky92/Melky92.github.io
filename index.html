@@ -7,17 +7,19 @@
 <body>
   <div class="data">
     <div id="div_datos_imagen">
-      <h3 class= "input text"> Hora en imagen:
+      <h4 class= "input text"> Hora en imagen:
         <input id="input_hora_imagen" type="time" onchange="CheckAndRun()" value="11:00"/>
-      </h3>
+      </h4>
     </div>
-    <div id="div_tiempo_restante">
-      <h3 class="input text"> Tiempo Restante:
-        <input id="input_tiempo_restante" type="time" onchange="CheckAndRun()" value="01:00"/>
-      </h3>
-    </div>
+    <h4 id="div_tiempo_restante">
+      <div class="input text"> Tiempo Restante:
+        <input id="input_tiempo_restante" type="number" onchange="CheckAndRun()" min="1" max="60" value="30"/> min
+        <br>
+        Eclosionado <input id="input_eclosionado" type="checkbox" onchange="CheckAndRun()" value="false"></input>
+      </div>
+    </h4>
     <div id="div_pkmn">
-      <h3 class="input text"> Pokemon:
+      <h4 class="input text"> Pokemon:
           <select id="input_pkmn_lvl" onchange="LvlChanged()">
               <option value="5">nivel 5</option>
               <option value="4">nivel 4</option>
@@ -27,15 +29,15 @@
           </select>
           <select id="input_pkmn" onchange="CheckAndRun()">
           </select>
-      </h3>
+      </h4>
     </div>
     <div id="div_gym">
-      <h3 class="input text"> Gimnasio:
+      <h4 class="input text"> Gimnasio:
         <select id="input_gym_name" onchange="GymSelected()">
         </select>
         <br>Dirección:
         <input id="input_gym_dir" type="text" onchange="CheckAndRun()"/>
-      </h3>
+      </h4>
     </div>
   </div>
   <!--<button onclick="CheckAndRun()">Generar</button>-->
@@ -53,6 +55,6 @@
 <!--<script type="text/javascript" src="jquery.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="clipboard.js-master/dist/clipboard.min.js"></script>
-<script type="text/javascript" src="calcs.js?v=2"></script>
-<script type="text/javascript" src="data.js?v=2"></script>
+<script type="text/javascript" src="calcs.js?v=3"></script>
+<script type="text/javascript" src="data.js?v=3"></script>
 </html>
