@@ -42,7 +42,7 @@ var pkmn =
   {"Name" : "MOLTRES","Level" : 5,"Icon" : "_","Rec_Low" : "8", "Rec_High" : "10"},
 ];
 
-var gyms =
+/*var gyms =
 [
   {"Name" : "El Cristo",
   "Address" : "El Cristo, Segundo anillo"},
@@ -50,20 +50,31 @@ var gyms =
   "Address" : "Calle Charcas esquina Beni"},
   {"Name" : "Aslam",
   "Address" : "Campus UAGRAM cerca 2do anillo"},
-];
+];*/
 //var gyms =["El Cristo","Iglesia San Andres","Aslam"];
 //var dirs =["El Cristo, Segundo anillo","Calle Charcas esquina Beni","Campus UAGRAM cerca 2do anillo"];
 
 $(document).ready(function () {
   //console.log($("#input_gym_name")[0]);
-  for(i=0;i<gyms.length;i++)
-  {
-    $("#input_gym_name")[0][i].text = gyms[i].Name;
-    $("#input_gym_name")[0][i].name = gyms[i].Name;
-    $("#input_gym_name")[0][i].address = gyms[i].Address;
-  }
-  LvlChanged();
-  GymSelected();
+  $.get("data.txt", function(data) {
+    console.log( "data" );
+    gyms = data.gimnasios;
+    var $input_gym_name = $("#input_gym_name");
+    $input_gym_name.empty();
+    for(i=0;i<gyms.length;i++)
+    {
+      $input_gym_name.append( '<option></option>' );
+      $input_gym_name[0][i].text = gyms[i].Name;
+      $input_gym_name[0][i].name = gyms[i].Name;
+      $input_gym_name[0][i].address = gyms[i].Dir;
+    }
+  }).done(function() {
+  }).fail(function() {
+    console.log( "error" );
+  }).always(function() {
+    LvlChanged();
+    GymSelected();
+  });;
 });
 
 function LvlChanged()
