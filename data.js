@@ -69,8 +69,8 @@ $(document).ready(function () {
       $input_gym_name[0][i].address = gyms[i].Dir;
     }
   }).done(function() {
-  }).fail(function() {
-    console.log( "error" );
+  }).fail(function(data) {
+    console.log( data);
   }).always(function() {
     LvlChanged();
     GymSelected();
