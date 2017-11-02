@@ -523,6 +523,6 @@
   {
     "Name": "Virgen Maria de Equipe",
     "Dir": "Av San Martin entrando calle Cordoba entre 2o y 3er anillo"
-  },
+  }
   ]
 }
