@@ -56,8 +56,8 @@ var pkmn =
 
 $(document).ready(function () {
   //console.log($("#input_gym_name")[0]);
-  $.get("data.txt", function(data) {
-    console.log( "data" );
+  $.getJSON("./data.txt", function(data) {
+    //console.log( "data" );
     gyms = data.gimnasios;
     var $input_gym_name = $("#input_gym_name");
     $input_gym_name.empty();
