@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     new Clipboard('#copiar_resultado');
+    //document.getElementById("input_hora_imagen").value = new Date($.now());
 });
 
 function CheckAndRun(){
