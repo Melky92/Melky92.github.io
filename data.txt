@@ -38,7 +38,7 @@
   },
   {
     "Name": "Atlantida",
-    "Dir": "Segundo Anillo netre canal cotoca y Paragua"
+    "Dir": "Segundo Anillo entre canal cotoca y Paragua"
   },
   {
     "Name": "Atlas",

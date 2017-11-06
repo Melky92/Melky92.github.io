@@ -22,7 +22,7 @@ function CheckAndRun(){
 
   if(eclosionado == false)
   {
-    tiempo_restante_img = tiempo_restante_img + 60;
+    tiempo_restante_img = tiempo_restante_img + 45;
   }
 //50
 //30
@@ -31,11 +31,19 @@ function CheckAndRun(){
   var tiempo_rezagados = null;
   var tiempo_restante = tiempo_restante_img - (hora_actual - hora_imagen)/60000;
 
-  if(tiempo_restante <= 50)
+  if(tiempo_restante <= 20)
+  {
+    tiempo_raid = tiempo_restante - 5;
+  }
+  else if(tiempo_restante <= 40)
+  {
+    tiempo_raid = tiempo_restante - 10;
+  }
+  else if(tiempo_restante <= 45)
   {
     tiempo_raid = 30;
   }
-  else if(tiempo_restante <= 80)
+  else if(tiempo_restante <= 65)
   {
     tiempo_raid = 30;
     tiempo_rezagados = 50;
