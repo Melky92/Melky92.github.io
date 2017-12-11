@@ -27,13 +27,13 @@ $(document).ready(function () {
 function CheckAndRun(){
   //var hora_imagen = new Date($("#input_hora_imagen")[0].value);
   //var tiempo_restante = new Date($("#input_tiempo_restante")[0].value);
-  var hora_actual = new Date($.now()).getTime() % (100800000);
-  var hora_imagen = document.getElementById("input_hora_imagen").valueAsNumber + 14400000;
+  var hora_actual = new Date($.now()).getTime() % (100800000) + (14400000)*3;
+  var hora_imagen = document.getElementById("input_hora_imagen").valueAsNumber + (14400000);
   var tiempo_restante_img = document.getElementById("input_tiempo_restante").valueAsNumber;// * 60000;
   var eclosionado = $("#input_eclosionado")[0].checked;
 
-  console.log(hora_actual);
-  console.log(hora_imagen);
+  console.log(hora_actual / 3600000);
+  console.log(hora_imagen / 3600000);
 
   if(isNaN(hora_imagen) || isNaN(tiempo_restante_img))
   {
@@ -74,10 +74,13 @@ function CheckAndRun(){
     tiempo_raid = tiempo_restante - 40;
     tiempo_rezagados = tiempo_restante - 20;
   }
+  
+
   var tiempo_raid = (hora_actual + (tiempo_raid * 60000));
   var tiempo_rezagados = (hora_actual + (tiempo_rezagados * 60000));
   var tiempo_fin = (hora_imagen + (tiempo_restante_img * 60000));
 
+  
   var PKMN = $("#input_pkmn")[0].selectedOptions[0];
   var GYM = document.getElementById("input_gym_name").value;
   var DIR = document.getElementById("input_gym_dir").value;
@@ -104,7 +107,7 @@ function CheckAndRun(){
     resultado += i + ")\n";
   resultado += "\n";
   resultado += "*Lista Oficial*\n";
-  resultado += "Suerte Gente!🇧🇴\n";
+  resultado += "Suerte Gente!????\n";
 
   $("#texto_resultado").text(resultado);
 }
