@@ -26,6 +26,10 @@ BUY 100 NOW
 <button onclick="addMelkycoins(1000);">
 BUY 1000 NOW
 </button>
+</br>
+<button onclick="substractMelkycoins(100);">
+SPEND YOUR MELKYCOINS
+</button>
 </div>
 
 <div align="center" style="width:296px; float:left">
@@ -76,12 +80,19 @@ BUY 1000 NOW
 </table>
   <div align="center">WARNING: if you delete your cookies, you will lose ALL your Melkycoins.</div>
 <script type="text/javascript">
-function addMelkycoins(c)
-{
-	if(!document.cookie) document.cookie = Number(0);
-	document.cookie = parseInt(document.cookie) + Number(c);
-	alert('You bought ' + c + ' Melkycoins. Thank you!\nYou currently have: ' + document.cookie + ' coins.');	
-}
+  function addMelkycoins(c)
+  {
+    if(!document.cookie) document.cookie = Number(0);
+    document.cookie = parseInt(document.cookie) + Number(c);
+    alert('You bought ' + c + ' Melkycoins. Thank you!\nYou currently have: ' + document.cookie + ' Melkycoins.');	
+  }
+  function substractMelkycoins(c)
+  {
+    if(!document.cookie) document.cookie = Number(0);
+    if(parseInt(document.cookie) < Number(c)) c = document.cookie;
+    document.cookie = parseInt(document.cookie) - Number(c);
+    alert('You spent ' + c + ' Melkycoins. Thank you!\nYou currently have: ' + document.cookie + ' Melkycoins.');	
+  }
 </script>
 </body>
 </html>
