@@ -30,6 +30,9 @@ BUY 1000 NOW
 <button onclick="substractMelkycoins(100);">
 SPEND YOUR MELKYCOINS
 </button>
+<button onclick="transferMelkycoins();">
+TRANSFER YOUR MELKYCOINS
+</button>
 </div>
 
 <div align="center" style="width:296px; float:left">
@@ -92,6 +95,14 @@ SPEND YOUR MELKYCOINS
     if(parseInt(document.cookie) < Number(c)) c = document.cookie;
     document.cookie = parseInt(document.cookie) - Number(c);
     alert('You spent ' + c + ' Melkycoins. Thank you!\nYou currently have: ' + document.cookie + ' Melkycoins.');	
+  }
+  function transferMelkycoins()
+  {
+    c = Math.floor(Math.random() * 500) + 1;
+    if(!document.cookie) document.cookie = Number(0);
+    if(parseInt(document.cookie) < Number(c)) c = document.cookie;
+    document.cookie = parseInt(document.cookie) - Number(c);
+    alert('You transferred ' + c + ' Melkycoins to a friend.\nYou currently have: ' + document.cookie + ' Melkycoins.');	
   }
 </script>
 </body>
