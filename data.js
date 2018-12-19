@@ -5,7 +5,6 @@ var pkmn =
   {"Name" : "LEVEL 2","Level" : 2,"Icon" : "❓","Rec_Low" : "2", "Rec_High" : "4"},
   {"Name" : "LEVEL 3","Level" : 3,"Icon" : "❓","Rec_Low" : "4", "Rec_High" : "6"},
   {"Name" : "LEVEL 4","Level" : 4,"Icon" : "❓","Rec_Low" : "6", "Rec_High" : "8"},
-  {"Name" : "LEVEL 5","Level" : 5,"Icon" : "❓","Rec_Low" : "8", "Rec_High" : "10"},
 
   {"Name" : "MAGIKARP","Level" : 1,"Icon" : "_","Rec_Low" : "1", "Rec_High" : "2"},
   {"Name" : "CHARMELEON","Level" : 1,"Icon" : " ","Rec_Low" : "1", "Rec_High" : "2"},
@@ -55,6 +54,10 @@ var pkmn =
   {"Name" : "CHARIZARD","Level" : 4,"Icon" : "_","Rec_Low" : "6", "Rec_High" : "8"},
   {"Name" : "RHYDON","Level" : 4,"Icon" : "🦏","Rec_Low" : "6", "Rec_High" : "8"},
 
+  
+  {"Name" : "LATIAS","Level" : 5,"Icon" : " ","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "LATIOS","Level" : 5,"Icon" : " ","Rec_Low" : "8", "Rec_High" : "10"},
+  {"Name" : "LEVEL 5","Level" : 5,"Icon" : "❓","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "HO-OH","Level" : 5,"Icon" : "🐔","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "SUICUNE","Level" : 5,"Icon" : "🦄","Rec_Low" : "8", "Rec_High" : "10"},
   {"Name" : "ENTEI","Level" : 5,"Icon" : "🦁","Rec_Low" : "8", "Rec_High" : "10"},
