@@ -86,8 +86,9 @@ TRANSFER YOUR MELKYCOINS
   function addMelkycoins(c)
   {
     if(!document.cookie) document.cookie = Number(0);
+    c = c * 2;
     document.cookie = parseInt(document.cookie) + Number(c);
-    alert('You bought ' + c + ' Melkycoins. Thank you!\nYou currently have: ' + document.cookie + ' Melkycoins.');	
+    alert('You bought ' + c/2 + ' Melkycoins, but you get  ' + c + ' because of birthday reasons!\n Thank you!\nYou currently have: ' + document.cookie + ' Melkycoins.');	
   }
   function substractMelkycoins(c)
   {
