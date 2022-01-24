@@ -1,9 +1,13 @@
+async function getMovies(res){
+  return Object.values(res.movies2);
+}
+
 async function getMovieList(){
   let movie_list = [];
   try {
     let response = await fetch("https://getpantry.cloud/apiv1/pantry/42246c73-26f8-4874-8219-dd4ead8eea31/basket/movies");
     let parsed_response = await response.json();
-    movie_list = parsed_response.movies;
+    movie_list = getMovies(parsed_response);
   } catch(err) {
     console.log(err);
   }
@@ -12,6 +16,9 @@ async function getMovieList(){
 
 async function setMovies(movie_list){
   movie_list.forEach(movie => {
+    if(movie.deleted){
+      return;
+    }
     let movie_div = jQuery('<div>', {
       class: 'col-sm-2 mb-5',
     });

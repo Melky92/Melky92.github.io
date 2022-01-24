@@ -1,13 +1,36 @@
+function makeMovieKey(movie_title){
+  return movie_title.toLowerCase().replace(/\s/g, '');
+}
+
 async function getMovieList(){
   let movie_list = [];
   try {
-    let response = await fetch("https://api.npoint.io/274635c026d1a5d65148");
+    let response = await fetch("https://getpantry.cloud/apiv1/pantry/42246c73-26f8-4874-8219-dd4ead8eea31/basket/movies");
     let parsed_response = await response.json();
-    movie_list = parsed_response.movies;
+    movie_list = parsed_response.movies2;
   } catch(err) {
     console.log(err);
   }
   return movie_list;
+}
+
+async function getMovie(movie_title){
+  let movie_key = makeMovieKey(movie_title);
+  let movies = await getMovieList();
+  return movies[movie_key];
+}
+
+async function findMovie(){
+  console.log("finding");
+  let movie = await getMovie($("#title")[0].value);
+  if(movie){
+    $("#title")[0].value = movie.title;
+    $("#review")[0].value = movie.review;
+    $("#image")[0].value = movie.image;
+    $("#rating")[0].value = movie.rating;
+  } else {
+    alert("No hay tu peli, agregajla");
+  }
 }
 
 async function addMovie(movie){
@@ -18,7 +41,7 @@ async function addMovie(movie){
         "accept-language": "en-US,en;q=0.9,es;q=0.8",
         "content-type": "application/json;charset=UTF-8",
       },
-      "body": JSON.stringify({movies:[movie]}),
+      "body": JSON.stringify({movies2:movie}),
       "method": "PUT",
     });
   } catch(err){
@@ -26,23 +49,26 @@ async function addMovie(movie){
   }
 }
 
-function getMovie(){
+function createMovie(){
   let movie = {
     title: $("#title")[0].value,
     review: $("#review")[0].value,
     image: $("#image")[0].value,
     rating: $("#rating")[0].value,
+    deleted: false,
   };
   if(!movie.title || !movie.review || !movie.image || !movie.rating){
     alert("ya pe llena bien los datos weon lptm me cago");
     return null;
   }
-  return movie;
+
+  let movie_key = makeMovieKey(movie.title);
+
+  return { [movie_key] : movie};
 }
 
 async function submitMovie(){
-  console.log("submitting");
-  let movie = getMovie();
+  let movie = createMovie();
   if(movie){
     addMovie(movie);
     $("#title")[0].value = "";
@@ -55,4 +81,5 @@ async function submitMovie(){
 
 $(document).ready(function(){
   $("#metalebtn").click(submitMovie);
+  $("#buscarbtn").click(findMovie);
 });
