@@ -35,6 +35,7 @@ function getMovie(){
   };
   if(!movie.title || !movie.review || !movie.image || !movie.rating){
     alert("ya pe llena bien los datos weon lptm me cago");
+    return null;
   }
   return movie;
 }
@@ -42,7 +43,14 @@ function getMovie(){
 async function submitMovie(){
   console.log("submitting");
   let movie = getMovie();
-  addMovie(movie);
+  if(movie){
+    addMovie(movie);
+    $("#title")[0].value = "";
+    $("#review")[0].value = "";
+    $("#image")[0].value = "";
+    $("#rating")[0].value = "";
+    alert("Bien hecho");
+  }
 }
 
 $(document).ready(function(){

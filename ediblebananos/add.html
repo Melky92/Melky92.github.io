@@ -14,27 +14,29 @@
 
   </head>
   <body>
-    <div id="movie-container" class="row justify-content-md-center">
-      <div class="center col-sm-4 m-5">
-        <div class="card text-white bg-primary text-center">
-          <div class="card-body justify-content-md-left">
-            <label for="title"><b>Título: </b></label>
-            <input type="text" placeholder="Título de tu peli we" name="title" id="title">
-            <br/>
-            <label for="image"><b>Imagen: </b></label>
-            <input type="text" placeholder="URL del poster de tu peli" name="image" id="image">
-            <br/>
-            <label for="review"><b>Reseña: </b></label>
-            <input type="text" placeholder="Tu opinión o algo" name="review" id="review">
-            <br/>
-            <label for="rating"><b>Valuación: </b></label>
-            <input type="text" placeholder="10? 1? 7.8? B-?" name="rating" id="rating">
-            /10
-            <br/>
-            <button type="submit" id="metalebtn">Metale con confianza</button>
+    <div id="form-container" class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-5 mt-5">
+          <div class="card text-white bg-primary">
+            <div class="card-body">
+              <label for="title"><b>Título: </b></label>
+              <input type="text" placeholder="Título de tu peli we" name="title" id="title">
+              <br/>
+              <label for="image"><b>Imagen: </b></label>
+              <input type="text" placeholder="URL del poster de tu peli" name="image" id="image">
+              <br/>
+              <label for="review"><b>Reseña: </b></label>
+              <input type="text" placeholder="Tu opinión o algo" name="review" id="review">
+              <br/>
+              <label for="rating"><b>Valuación: </b></label>
+              <input type="text" placeholder="10? 1? 7.8? B-?" name="rating" id="rating">
+              /10
+              <br/>
+              <button type="submit" id="metalebtn">Metale con confianza</button>
+            </div>
           </div>
+          <p class="p-2" style="background: black; color:white;">Al ingresar datos aquí, afirmas que estás de acuerdo con nuestra <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Política de privacidad</a>.</p>
         </div>
-        <p>Al ingresar datos aquí afirmas que estás de acuerdo con nuestra <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Política de privacidad</a>.</p>
       </div>
     </div>
 
@@ -43,4 +45,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+  <style>
+    body {
+      background-image: url('https://as2.ftcdn.net/v2/jpg/02/09/21/21/1000_F_209212157_5ECj3ndDauf0Qfn8HcNJ7TzU3sMoeL8Z.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
 </html>
